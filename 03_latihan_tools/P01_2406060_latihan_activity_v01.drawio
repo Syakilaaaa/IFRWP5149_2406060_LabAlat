@@ -1,0 +1,36 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="EqY8wnxH1mYrO1OOS0qj">
+    <mxGraphModel dx="691" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rNGfXr9lignyjqLQGaPn-4" edge="1" parent="1" source="rNGfXr9lignyjqLQGaPn-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="rNGfXr9lignyjqLQGaPn-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-1" parent="1" style="ellipse;html=1;labelBackgroundColor=none;fillColor=light-dark(#000000,#000000);fontColor=#ffffff;strokeColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="210" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-2" parent="1" style="ellipse;html=1;shape=endState;labelBackgroundColor=none;fillColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="210" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-5" edge="1" parent="1" source="rNGfXr9lignyjqLQGaPn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-7" edge="1" parent="1" source="rNGfXr9lignyjqLQGaPn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="rNGfXr9lignyjqLQGaPn-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-3" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Buka&amp;nbsp; daftar peralatan" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-8" edge="1" parent="1" source="rNGfXr9lignyjqLQGaPn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;" target="rNGfXr9lignyjqLQGaPn-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rNGfXr9lignyjqLQGaPn-6" parent="1" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Lihat Informasi ketersediaan" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="605" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
