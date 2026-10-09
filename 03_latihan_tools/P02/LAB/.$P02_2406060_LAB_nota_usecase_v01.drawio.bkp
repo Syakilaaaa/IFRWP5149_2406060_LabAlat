@@ -1,0 +1,13 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="LaJPToAr4Hy8nFwKODMG">
+    <mxGraphModel dx="596" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uExl2LJy9wLlgp8drRSI-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=260;height=40;" value="Sistem Informasi Peminjaman dan Pengembalian Peralatan Laboratorium &lt;br/&gt;Kampus" vertex="1">
+          <mxGeometry height="480" width="360" x="40" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,28 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="CYO7S5Zfz29MZfcGKgRx">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YpvjZxBEgn4mBjxQr4n3-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" value="Sistem laboratorium" vertex="1">
+          <mxGeometry height="400" width="335" x="255" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JrGdRENoRZNZVbkWO070-5" edge="1" parent="YpvjZxBEgn4mBjxQr4n3-1" source="JrGdRENoRZNZVbkWO070-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="JrGdRENoRZNZVbkWO070-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JrGdRENoRZNZVbkWO070-1" parent="YpvjZxBEgn4mBjxQr4n3-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="60" width="30" x="25" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JrGdRENoRZNZVbkWO070-3" parent="YpvjZxBEgn4mBjxQr4n3-1" style="fontStyle=0;html=1;whiteSpace=wrap;" value="lihat jadwal" vertex="1">
+          <mxGeometry height="40" width="120" x="145" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JrGdRENoRZNZVbkWO070-4" parent="YpvjZxBEgn4mBjxQr4n3-1" style="ellipse;html=1;whiteSpace=wrap;" value="kelola jadwal kuliah" vertex="1">
+          <mxGeometry height="25" width="137.5" x="142.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JrGdRENoRZNZVbkWO070-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="admin" vertex="1">
+          <mxGeometry height="60" width="30" x="670" y="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
