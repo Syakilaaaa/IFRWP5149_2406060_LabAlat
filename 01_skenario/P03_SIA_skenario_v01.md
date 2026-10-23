@@ -1,16 +1,8 @@
+<!-- Deskripsi -->
+Mahasiswa mengajukan KRS dengan memilih mata kuliah. Setiap pengajuan menjalankan validasi KRS yang memeriksa kelengkapan, prasyarat mata kuliah, dan benturan jadwal. Jika validasi berhasil, sistem menyimpan pengajuan berstatus menunggu persetujuan dosen wali. Pada konfirmasi penyimpanan, mahasiswa dapat memilih mengunduh bukti pengajuan. Dosen wali menyetujui atau menolak KRS dan memberikan catatan keputusan. 
 
-<!--skenario-->
-Skenario tugas: 
-Mahasiswa mengajukan KRS dengan memilih mata kuliah. Setiap 
-pengajuan menjalankan validasi KRS yang memeriksa kelengkapan, 
-prasyarat mata kuliah, dan benturan jadwal. Jika validasi berhasil, 
-sistem menyimpan pengajuan berstatus menunggu persetujuan dosen 
-wali. Pada konfirmasi penyimpanan, mahasiswa dapat memilih 
-mengunduh bukti pengajuan. Dosen wali menyetujui atau menolak KRS 
-dan memberikan catatan keputusan.
-
-<!--tabel kebutuhan--> 
-|  ID   |                             Kebutuhan_tugas                              |
+<!-- tabel kebutuhan -->
+|  ID   |                              Kebutuhan tugas                             |
 |-------|--------------------------------------------------------------------------|
 |SIA-R01|                  Mahasiswa dapat melihat jadwal kuliah                   |
 |SIA-R02|               Admin akademik dapat mengelola jadwal kuliah               |
@@ -19,40 +11,42 @@ dan memberikan catatan keputusan.
 |SIA-R05|Mahasiswa dapat mengunduh bukti jika memilihnya pada konfirmasi pengajuan |
 |SIA-R06|        Dosen wali dapat memproses persetujuan atau penolakan KRS         |
 
+<!-- batas sistem dan aturan -->
+Batas dan asumsi: 
+•	Pengguna telah terautentikasi. 
+•	Data mata kuliah, prasyarat, dan jadwal tersedia. 
+•	Validasi gagal menyebabkan pengajuan belum berhasil tersimpan. 
+•	Unduh bukti tidak menjadi syarat keberhasilan pengajuan. 
+•	KRS tersimpan belum berarti disetujui. 
+•	Pembayaran, pengisian nilai, dan implementasi basis data berada di luar tugas. 
+ 
+
+<!-- tabel identifikasi -->
+|         Aktor        |                    Tujuan terhadap sistem                      |
+|----------------------|----------------------------------------------------------------|
+|       Mahasiswa      |         Melihat jadwal, mengajukan KRS, mengunduh bukti        |
+|     admin akademik   |                       Mengelola jadwal                         |
+|      dosen wali      |                   Memproses persetujuan KRS                    |
 
 
-<!-- batas dan asumsi-->
-• Pengguna telah terautentikasi. 
-• Data mata kuliah, prasyarat, dan jadwal tersedia. 
-• Validasi gagal menyebabkan pengajuan belum berhasil tersimpan. 
-• Unduh bukti tidak menjadi syarat keberhasilan pengajuan. 
-• KRS tersimpan belum berarti disetujui. 
-• Pembayaran, pengisian nilai, dan implementasi basis data berada di luar 
-tugas. 
+<!-- tabel susnan katalog use case -->
+|   ID   |          Nama use case          |        Peran dalam model         |
+|--------|---------------------------------|----------------------------------|
+|SIA-UC01|       Lihat jadwal kuliah       |    Fungsi utama mahasiswa        |
+|SIA-UC02|         mengelola jadwal        |  Fungsi utama admin akademik     |
+|SIA-UC03|           Ajukan KRS            |    Fungsi utama mahasiswa        |
+|SIA-UC04|      Periksa validasi KRS       | Perilaku yang disertakan UC03    |
+|SIA-UC05|   unduh bukti pengajuan KRS     |  Tambahan bersyarat pada UC03    |
+|SIA-UC06|      Proses keputusan KRS       |     Fungsi utama dosen wali      |
 
-<!-- tabel identifikasi aktor -->
 
-|   Aktor      |                        Tujuan terhadap sistem                          |
-|--------------|------------------------------------------------------------------------|
-|  Mahasiswa   |melihat jadwal,mengajukan KRS,mengunduh bukti konfirmasi                |
-| AdminAkademik|mengelola jadwal,memvalidasi KRS,                                       |
-| Wali Dosen   |memproses persetujuan atau penolakan KRS, beri catatan keputusan        |
-
-<!-- tabel susunan katalog use case--> 
-ID          Nama_use_case peran_dalam_model 
-SIA-R01     melihat jadwal kuliah
-SIA-R02     mengelola jadwal kuliah
-SIA-R03     mengajukan KRS
-SIA-R04     validasi KRS
-SIA-R05
-SIA-R06
 
 <!-- relasi include -->
 LAB-UC03 «include» LAB-UC04 
-Alasan: pemeriksaan menjadi bagian validasi pengajuan.
+Alasan: Pengajuan KRS harus diperiksa validitasnya agar sesuai dengan ketentuan akademik.
 
 <!-- relasi extend -->
 LAB-UC05 «extend» LAB-UC03 
 Extension point: Bukti pengajuan tersedia. 
-Kondisi: [mahasiswa memilih cetak]. 
-Alasan: pengajuan tetap berhasil tanpa pencetakan.
+Kondisi: [mahasiswa memilih unduh]. 
+Alasan:.pengajuan tetap berhasil tanpa diunduh.
