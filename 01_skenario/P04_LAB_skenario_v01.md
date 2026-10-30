@@ -54,3 +54,31 @@ Batas dan asumsi:
 | LAB-UC11 | Catat Pengembalian Peralatan | Baru pada Pertemuan 4; fungsi utama petugas; direalisasikan LAB-CO02 | LAB-R09 |
 | LAB-UC12 | Periksa Kondisi Peralatan | Baru pada Pertemuan 4; perilaku yang disertakan LAB-UC11 | LAB-R10 |
 
+<!-- Tetapkan generalization aktor  -->
+•	Mahasiswa adalah bentuk khusus dari Peminjam, dan Dosen adalah bentuk khusus dari Peminjam. Alasan: keduanya berbagi fungsi yang sama, yaitu melihat ketersediaan peralatan dan mengajukan peminjaman. 
+•	Asosiasi ke LAB-UC01 dan LAB-UC03 digambar satu kali, yaitu dari Peminjam. Jangan menggambar garis yang sama dari Mahasiswa dan dari Dosen. 
+•	Asosiasi Mahasiswa ke LAB-UC05 Cetak Bukti Pengajuan tidak ikut dipindahkan dan tidak dihapus, karena fungsi itu khusus mahasiswa. Asosiasi ini menjadi contoh asosiasi tambahan milik aktor khusus. 
+•	Periksa arah panah pada gambar: ujung segitiga kosong harus menempel pada Peminjam, bukan pada Mahasiswa dan bukan pada Dosen. Karena Peminjam digambar di tengah, panah Mahasiswa mengarah ke bawah dan panah Dosen mengarah ke atas; keduanya berakhir pada Peminjam. 
+
+<!-- Tetapkan generalization use case  -->
+•	LAB-UC08, LAB-UC09, dan LAB-UC10 adalah bentuk khusus dari LABUC02 Kelola Data Peralatan. Alasan: ketiganya adalah bentuk khusus pengelolaan data peralatan. 
+•	Tuliskan untuk setiap use case khusus satu kalimat perilaku pembedanya. Tambah menghasilkan data peralatan baru. Ubah menghasilkan data peralatan yang berubah. Hapus menghasilkan data peralatan yang terhapus dengan syarat pada aturan studi kasus. 
+
+<!-- Tetapkan collaboration dan realization  -->
+|   ID   |NamaCollaboration(SamadenganNamaUseCase)|                  UseCaseyangDirealisasikan                   |
+|--------|----------------------------------------|--------------------------------------------------------------|
+|LAB-CO01|                 Ajukan                 |            Peminjaman LAB-UC03: Ajukan Peminjaman            |
+|LAB-CO02|                 Catat                  |Pengembalian Peralatan LAB-UC11: Catat Pengembalian Peralatan |
+
+<!-- use case description baru  -->
+|   Elemen    |                                      LAB-UC11:CatatPengembalianPeralatan                                       |
+|     ID      |                                dan nama LAB-UC11: Catat Pengembalian Peralatan                                 |
+|   Sumber    |                                         kebutuhan LAB-R09 dan LAB-R10                                          |
+|   Tujuan    |                 Pengembalian tercatat dan status peminjaman serta kondisi peralatan terbarui.                  |
+|    Aktor    |                                           utama Petugas Laboratorium                                           |
+|   Pemicu    |        Petugas memilih fungsi pencatatan pengembalian dan menentukan peminjaman yang akan dikembalikan.        |
+|  Prasyarat  |                     Petugas telah terautentikasi; peminjaman terpilih berstatus Dipinjam.                      |
+|Pascakondisi |berhasil Pengembalian tercatat dengan tanggal kembali dan kondisi peralatan; status peminjaman menjadi Selesai. |
+|Pascakondisi |               gagal Tidak ada pengembalian baru yang tercatat; status peminjaman tidak berubah.                |
+|   Include   |                                      LAB-UC12: Periksa Kondisi Peralatan                                       |
+|Collaboration|                                     LAB-CO02: Catat Pengembalian Peralatan                                     |
