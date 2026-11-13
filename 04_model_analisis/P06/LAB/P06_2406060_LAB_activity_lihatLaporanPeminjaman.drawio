@@ -1,0 +1,80 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="96VlSaphrIUIF0Cjw1I_">
+    <mxGraphModel dx="92" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-1" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="930" width="370" x="1110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-3" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="menampilkan daftar priode laporan" vertex="1">
+          <mxGeometry height="40" width="165" x="102.5" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-47" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-1" source="ZjYBfXSBnTWPLsjUHBh3-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="ZjYBfXSBnTWPLsjUHBh3-46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-33" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="menampilkan laporan peminjaman priode yang dipilih" vertex="1">
+          <mxGeometry height="50" width="187.5" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-43" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-1" source="ZjYBfXSBnTWPLsjUHBh3-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-37" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan tidak ada data peminjaman pada periode tersebut" vertex="1">
+          <mxGeometry height="60" width="240" x="13.75" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-45" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-1" source="ZjYBfXSBnTWPLsjUHBh3-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-41" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="rhombus;" value="" vertex="1">
+          <mxGeometry height="60" width="66.25" x="100.63" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-44" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="118.75999999999999" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-48" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-1" source="ZjYBfXSBnTWPLsjUHBh3-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="ZjYBfXSBnTWPLsjUHBh3-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-46" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="rhombus;" value="ada data peminjaman?" vertex="1">
+          <mxGeometry height="100" width="147.5" x="60.01" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-52" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ZjYBfXSBnTWPLsjUHBh3-41" value="[ada]">
+          <mxGeometry relative="1" x="0.039" as="geometry">
+            <Array as="points">
+              <mxPoint x="285" y="490" />
+              <mxPoint x="285" y="750" />
+            </Array>
+            <mxPoint x="205" y="490" as="sourcePoint" />
+            <mxPoint x="140" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-13" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;" value="Kepala Laboratorium" vertex="1">
+          <mxGeometry height="930" width="220" x="890" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-14" parent="ZjYBfXSBnTWPLsjUHBh3-13" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Membukan fungsi lihat laporan peminjaman" vertex="1">
+          <mxGeometry height="40" width="140" x="35" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-15" edge="1" parent="ZjYBfXSBnTWPLsjUHBh3-13" source="ZjYBfXSBnTWPLsjUHBh3-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-16" parent="ZjYBfXSBnTWPLsjUHBh3-13" style="ellipse;fillColor=strokeColor;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="90" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-31" parent="ZjYBfXSBnTWPLsjUHBh3-13" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="memilih priode laporan" vertex="1">
+          <mxGeometry height="40" width="165" x="27.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-17" edge="1" parent="1" source="ZjYBfXSBnTWPLsjUHBh3-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-32" edge="1" parent="1" source="ZjYBfXSBnTWPLsjUHBh3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-34" edge="1" parent="1" source="ZjYBfXSBnTWPLsjUHBh3-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;endArrow=block;endFill=1;" target="ZjYBfXSBnTWPLsjUHBh3-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZjYBfXSBnTWPLsjUHBh3-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt; Lihat Laporan Peminjaman, dari skenario LAB-UC07&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="321" x="1042.75" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

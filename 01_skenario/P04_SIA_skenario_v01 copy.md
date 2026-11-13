@@ -1,57 +1,52 @@
-Mahasiswa dan dosen sama-sama merupakan Civitas Akademika yang dapat melihat kalender akademik. Dosen menginput nilai mata kuliah yang diampunya setelah masa perkuliahan berakhir. Mahasiswa melihat Kartu Hasil Studi (KHS) untuk semester yang nilainya sudah dipublikasikan. Admin Akademik mengelola data mahasiswa: menambah data mahasiswa baru, mengubah data mahasiswa, dan menghapus data mahasiswa. Dua use case utama, Input Nilai Mata Kuliah dan Lihat KHS, ditunjukkan realisasinya oleh collaboration yang bersesuaian
+# Skenario Use Case (Pertemuan 4)
 
-• Kode kebutuhan dimulai dari SIA-R07 agar SIA-R01 dan SIA-R02 (Pertemuan 2) serta SIA-R03 sampai SIA-R06 (Pertemuan 3) tetap mempunyai identitas berbeda. • Pengguna telah terautentikasi dan memiliki hak akses sesuai peran. • Kalender akademik pada tugas ini adalah agenda resmi institusi (awal semester, batas KRS, masa ujian, dan sejenisnya); jangan menyamakannya dengan jadwal kuliah pada Pertemuan 2. • Nilai hanya dapat diinput oleh dosen pengampu mata kuliah tersebut. Nilai yang diinput belum terpublikasi sebelum dinyatakan resmi oleh ketentuan tugas ini: KHS hanya menampilkan nilai yang sudah dipublikasikan. • Hapus Data Mahasiswa hanya untuk mahasiswa yang tidak memiliki data akademik aktif. Ketentuan ini fiktif untuk latihan. • Pengajuan KRS tetap digambar sebagai bagian diagram kumulatif dari Pertemuan 3. Pembayaran dan perancangan basis data berada di luar tugas ini.
+## 1. SIA-UC07: Lihat Kalender Akademik
+* **Aktor:** Civitas Akademika (diwarisi oleh Mahasiswa dan Dosen)
+* **Prakondisi:** Pengguna telah berhasil melakukan autentikasi (*login*) ke dalam sistem.
+* **Alur Utama:**
+  1. Pengguna memilih menu **Kalender Akademik**.
+  2. Sistem mengambil data agenda resmi institusi yang aktif pada tahun akademik berjalan.
+  3. Sistem menampilkan rincian jadwal agenda (awal kuliah, batas KRS, masa ujian, dll.).
+* **Pascakondisi:** Informasi kalender akademik berhasil ditampilkan kepada pengguna.
 
-|No|   Nama_Aktor   |                        Kedudukan                         |                                          Fungsi                                            |
-|--|----------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------|
-|1 |CivitasAkademika|            Aktor umum, baru pada Pertemuan 4             |                                 Melihat kalender akademik.                                 |
-|2 |   Mahasiswa    |           Aktor khusus dari Civitas Akademika            |    Melihat jadwal kuliah, mengajukan KRS, mengunduh bukti pengajuan KRS, melihat kalender  | 
-|3 |     Dosen      |Aktor khusus dari Civitas Akademika, baru pada Pertemuan 4| Melihat kalender akademik melalui pewarisan dan menginput nilai mata kuliah yang diampunya |
-|4 |     Admin      |        Akademik  Aktor lama dari pertemuan sebelumnya    |                  Mengelola jadwal kuliah serta mengelola data mahasiswa                    |
-|5 |     Dosen      |            Wali  Aktor lama dari Pertemuan 3             |                                  Memproses keputusan KRS                                   |
+---
 
+## 2. SIA-UC08: Input Nilai Mata Kuliah (Realisasi: SIA-CO01)
+* **Aktor:** Dosen
+* **Prakondisi:** Dosen telah terautentikasi, tercatat sebagai dosen pengampu resmi mata kuliah terkait, dan masa perkuliahan telah berakhir.
+* **Alur Utama:**
+  1. Dosen membuka menu **Input Nilai** dan memilih kelas mata kuliah yang diampu.
+  2. Sistem memvalidasi hak akses pengampu dan menampilkan daftar mahasiswa peserta kelas.
+  3. Dosen memasukkan skor atau nilai akhir setiap mahasiswa, lalu menekan tombol **Simpan**.
+  4. Sistem menyimpan data nilai dengan status default **Belum Dipublikasikan** dan menampilkan pesan konfirmasi berhasil.
+* **Alur Alternatif:**
+  * *2a. Dosen bukan pengampu mata kuliah:* Sistem menolak akses dan menampilkan pesan peringatan bahwa pengguna tidak memiliki otorisasi pada kelas tersebut.
+* **Pascakondisi:** Data nilai tersimpan di dalam sistem namun belum dapat diakses melalui KHS mahasiswa sebelum dipublikasikan secara resmi.
 
+---
 
-1. Hierarki Mahasiswa dan Dosen
+## 3. SIA-UC09: Lihat KHS (Realisasi: SIA-CO02)
+* **Aktor:** Mahasiswa
+* **Prakondisi:** Mahasiswa telah terautentikasi dan memiliki riwayat pengambilan mata kuliah pada semester terkait.
+* **Alur Utama:**
+  1. Mahasiswa membuka menu **Kartu Hasil Studi (KHS)** dan memilih periode semester.
+  2. Sistem memfilter dan mengambil daftar nilai mahasiswa yang berstatus **Sudah Dipublikasikan**.
+  3. Sistem menghitung Indeks Prestasi Semester (IPS) dan menampilkan rincian KHS di layar.
+* **Alur Alternatif:**
+  * *2a. Nilai semester belum dipublikasikan:* Sistem tidak menampilkan nilai yang masih berstatus draf dan memberikan keterangan bahwa nilai resmi belum diterbitkan.
+* **Pascakondisi:** Mahasiswa dapat melihat rincian hasil studi resmi pada semester yang dipilih.
 
-Civitas Akademika merupakan aktor umum (general actor), sedangkan Mahasiswa dan Dosen merupakan aktor khusus (specialized actor).
+---
 
-Mahasiswa → Civitas Akademika: Mahasiswa mewarisi fungsi melihat kalender akademik dari aktor umum Civitas Akademika.
-Dosen → Civitas Akademika: Dosen mewarisi fungsi melihat kalender akademik dari aktor umum Civitas Akademika.
-2. Fungsi yang Diwarisi
-
-Fungsi yang diwarisi oleh Mahasiswa dan Dosen adalah SIA-UC07 Lihat Kalender Akademik. Dengan demikian, keduanya dapat mengakses fungsi tersebut melalui hubungan generalization tanpa perlu membuat asosiasi masing-masing aktor ke use case yang sama.
-
-3. Alasan Pemodelan
-
-Generalization digunakan karena Mahasiswa dan Dosen memiliki fungsi bersama, yaitu melihat kalender akademik. Dengan menempatkan fungsi tersebut pada aktor umum Civitas Akademika, diagram menjadi lebih sederhana, mengurangi pengulangan asosiasi, dan menunjukkan hubungan pewarisan fungsi dengan jelas.
-
-4. Aturan Penggambaran Diagram
-
-Hubungkan aktor Mahasiswa ke Civitas Akademika menggunakan relasi generalization.
-Hubungkan aktor Dosen ke Civitas Akademika menggunakan relasi generalization.
-Hubungkan Civitas Akademika satu kali ke SIA-UC07 Lihat Kalender Akademik.
-Arah panah generalization menggunakan garis dengan segitiga kosong yang menunjuk ke aktor umum Civitas Akademika.
-Jangan menggambar asosiasi langsung dari Mahasiswa dan Dosen ke SIA-UC07 karena fungsi tersebut sudah diwarisi dari aktor umum.
-Use Case Umum:
-
-SIA-UC10 — Kelola Data Mahasiswa: Use case umum yang digunakan Admin Akademik untuk mengelola data mahasiswa.
-Tiga Use Case Khusus:
-
-SIA-UC11 — Tambah Data Mahasiswa: Admin Akademik menambahkan data mahasiswa baru ke dalam sistem.
-SIA-UC12 — Ubah Data Mahasiswa: Admin Akademik memperbarui data mahasiswa yang sudah tersimpan di dalam sistem.
-SIA-UC13 — Hapus Data Mahasiswa: Admin Akademik menghapus data mahasiswa yang sudah tidak diperlukan sesuai ketentuan sistem.
-Alasan Pemodelan: SIA-UC11, SIA-UC12, dan SIA-UC13 merupakan use case khusus dari SIA-UC10 karena ketiganya memiliki tujuan umum yang sama, yaitu mengelola data mahasiswa, tetapi memiliki perilaku yang berbeda. Hubungan generalization digambarkan dengan garis berujung segitiga kosong dari setiap use case khusus menuju SIA-UC10 sebagai use case umum.
-
-|ID_Collaboration|Nama_Collaboration|            Use_Case_yang_Direalisasikan             |
-|----------------|------------------|-----------------------------------------------------|
-|    SIA-CO01    |      Input       |Nilai Mata Kuliah SIA-UC08 — Input Nilai Mata Kuliah |
-|    SIA-CO02    |    Lihat_KHS     |                SIA-UC09 — Lihat KHS                 |
-
-
-Penjelasan:
-
-SIA-CO01 — Input Nilai Mata Kuliah merupakan collaboration yang merealisasikan SIA-UC08 — Input Nilai Mata Kuliah.
-SIA-CO02 — Lihat KHS merupakan collaboration yang merealisasikan SIA-UC09 — Lihat KHS.
-Kedua collaboration menggambarkan interaksi antarbagian sistem untuk mewujudkan perilaku yang ditetapkan pada use case terkait. Nama collaboration harus sama persis dengan nama use case yang direalisasikannya. Aturan penggambaran diagram: Hubungkan setiap collaboration dengan use case yang direalisasikannya menggunakan relasi realization, yaitu garis putus-putus dengan segitiga kosong yang mengarah ke use case. Collaboration digambarkan di dalam batas sistem, dan aktor tidak dihubungkan langsung ke collaboration.
-
+## 4. SIA-UC10 s.d. SIA-UC13: Kelola Data Mahasiswa (Tambah, Ubah, Hapus)
+* **Aktor:** Admin Akademik
+* **Prakondisi:** Admin Akademik telah terautentikasi pada sistem.
+* **Alur Utama (General - SIA-UC10):**
+  1. Admin Akademik membuka menu **Manajemen Data Mahasiswa**.
+  2. Admin memilih salah satu bentuk pengelolaan khusus:
+     * **Tambah Data (SIA-UC11):** Admin mengisi formulir biodata mahasiswa baru, sistem memvalidasi kelengkapan NIM/data, lalu menyimpan record baru.
+     * **Ubah Data (SIA-UC12):** Admin mencari data mahasiswa, memperbarui informasi yang diperlukan, lalu menyimpan perubahan.
+     * **Hapus Data (SIA-UC13):** Admin memilih data mahasiswa untuk dihapus; sistem memeriksa status riwayat akademik mahasiswa sebelum mengeksekusi penghapusan permanen.
+* **Alur Alternatif:**
+  * *2c.1. Mahasiswa masih memiliki data akademik aktif (pada SIA-UC13):* Sistem membatalkan proses penghapusan dan menampilkan pesan bahwa data mahasiswa aktif tidak dapat dihapus.
+* **Pascakondisi:** Perubahan data master mahasiswa (penambahan, pembaruan, atau penghapusan yang valid) tersimpan secara konsisten di sistem.
