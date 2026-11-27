@@ -224,4 +224,8 @@ Dengan demikian, pemodelan berorientasi objek tidak hanya bertumpu pada visualis
 1. Institut Teknologi Garut. (2026). *Jobsheet Praktikum Analisis dan Desain Berorientasi Objek (ADBO) Pertemuan 3: Use Case Diagram dan Use Case Description*.
 2. Object Management Group. (2017). *OMG Unified Modeling Language (UML), Version 2.5.1*.
 3. Dokumentasi draw.io. *An Introduction to UML Diagrams, Save a Diagram in Various Formats, dan Supported Export Formats*.
+<<<<<<< HEAD
 4. Repository Praktikum ADBO:
+=======
+4. Repository Praktikum ADBO: https://github.com/syakila2406060/IFRWP5149_2406060_LabAlat
+>>>>>>> a028c7be25eda99a86179c6e6cf3703a5abd8a00
