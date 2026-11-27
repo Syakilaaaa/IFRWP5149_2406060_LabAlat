@@ -1,0 +1,65 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="HKCT1nbdkW2gOXeDFw3h">
+    <mxGraphModel dx="817" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rKl9og2AD62GEtCVx4dg-15" edge="1" parent="1" source="rKl9og2AD62GEtCVx4dg-1" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="rKl9og2AD62GEtCVx4dg-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="300" width="100" x="210" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;b&gt;:Database&lt;/b&gt;" vertex="1">
+          <mxGeometry height="300" width="100" x="530" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-12" parent="rKl9og2AD62GEtCVx4dg-11" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="120" width="10" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-13" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="&lt;b&gt;:Sistem Login&lt;/b&gt;" vertex="1">
+          <mxGeometry height="300" width="100" x="370" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-14" parent="rKl9og2AD62GEtCVx4dg-13" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="120" width="10" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=9;" value="1. Memasukan username dan PW" vertex="1">
+          <mxGeometry height="30" width="175" x="250" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-18" edge="1" parent="1" source="rKl9og2AD62GEtCVx4dg-14" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=1;" target="rKl9og2AD62GEtCVx4dg-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=9;" value="2. melakukan proses validasi akun" vertex="1">
+          <mxGeometry height="30" width="200" x="400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-21" edge="1" parent="1" source="rKl9og2AD62GEtCVx4dg-12" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=open;endFill=0;dashed=1;" target="rKl9og2AD62GEtCVx4dg-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=9;dashed=1;" value="3.. Akun tervalidasi benar" vertex="1">
+          <mxGeometry height="30" width="110" x="430" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=9;dashed=1;" value="4. menampilkan pesan login berhasil dan menampilkan dashboard" vertex="1">
+          <mxGeometry height="30" width="160" x="257.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="rKl9og2AD62GEtCVx4dg-26" edge="1" parent="1" source="rKl9og2AD62GEtCVx4dg-14" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;endArrow=open;endFill=0;" target="rKl9og2AD62GEtCVx4dg-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="337.25" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
